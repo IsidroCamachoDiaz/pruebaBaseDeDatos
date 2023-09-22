@@ -17,7 +17,7 @@ public class implementacionConexionBD implements conexionBD {
 
 		    Properties properties= new Properties();
 		    try {
-			   properties.load(new FileInputStream(new File("C:\\Users\\Puesto3\\eclipse-workspace\\pruebaBaseDeDatos\\src\\modelo\\claves.properties")));
+			   properties.load(new FileInputStream(new File("C:\\Users\\Puesto3\\git\\pruebaBaseDeDatos\\src\\modelo\\claves.properties")));
 			   
 		    BaseDatos = DriverManager.getConnection(properties.getProperty("jdbc"), properties.getProperty("USUARIO"), properties.getProperty("CLAVE"));
 
